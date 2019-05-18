@@ -3,6 +3,7 @@
 .home {
   .header-img {
     max-width: 100%;
+    border-radius: 0.5rem;
   }
 
   .intro {
@@ -39,6 +40,11 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 90%;
+        margin: 10px auto;
+      }
     }
   }
 
@@ -60,6 +66,7 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
 
     .walk-text {
       width: 50%;
