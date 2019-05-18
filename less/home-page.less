@@ -1,11 +1,17 @@
 // Home Content
 
 .home {
-  margin-top: 7rem;
+  margin-top: 9.5rem;
+  @media @phone {
+    margin-top: 7rem;
+  }
 
   .header-img {
     max-width: 100%;
     border-radius: 0.5rem;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
   }
 
   .intro {
@@ -25,27 +31,34 @@
     flex-wrap: wrap;
     width: 100%;
 
-    .sky {
-      @media @phone {
-        .hide;
-      }
-    }
-
-    .launch {
-      @media @phone {
-        .hide;
-      }
-    }
-
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-
+      position: relative;
+      animation-name: slideUp;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+      
       @media @phone {
         .img-mobile;
+        .sky {
+            .hide;
+          }
+      
+        .launch {
+            .hide;
+          }
       }
+    }
+    .sky {
+      animation-delay: 0.1s;
+    }
+
+    .launch {
+      animation-delay: 0.2s;
     }
   }
 

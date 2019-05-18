@@ -25,3 +25,20 @@
 
 // Mobile var
 @phone: ~"(max-width: 500px)";
+
+//CSS Animations
+@keyframes slideIn {
+    0% {margin-left: 100%;
+        opacity: 0;}
+    100% {margin-left: 0%;
+        opacity: 1}
+}
+
+@keyframes slideUp {
+    0% {top: 500px;
+        opacity: 0;}
+    80% {top: -20px;
+        opacity: 0.8;}
+    100% {top: 0px;
+        opacity: 1;}
+}
