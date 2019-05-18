@@ -170,8 +170,11 @@ p {
 .nav-bar {
   display: flex;
   flex-direction: column;
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.85);
   border-bottom: 2px solid #F1F1F1;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .nav-bar h1 {
   font-size: 3.5rem;
@@ -197,6 +200,7 @@ p {
 .nav-bar nav a:hover {
   text-decoration: underline;
   color: #5b6276;
+  font-weight: bold;
 }
 footer {
   color: #22283B;
@@ -207,6 +211,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 7rem;
 }
 .home .header-img {
   max-width: 100%;

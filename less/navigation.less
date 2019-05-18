@@ -2,8 +2,11 @@
 .nav-bar {
     display: flex;
     flex-direction: column;
-    background: @nav-bg;
+    background: fade(@nav-bg, 85%);
     border-bottom: 2px solid @nav-border;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     h1 {
         font-size: 3.5rem;
@@ -28,6 +31,7 @@
             &:hover{
                 text-decoration: underline;
                 color: lighten(@nav-font, 10%);
+                font-weight: bold;
             }
         }
     }
