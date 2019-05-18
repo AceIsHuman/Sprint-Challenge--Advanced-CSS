@@ -174,14 +174,13 @@ p {
 .nav-bar nav {
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: 0 auto 1%;
   width: 40%;
 }
 .nav-bar nav a {
   font-size: 1.6rem;
   color: #454A59;
   text-decoration: none;
-  padding: 1%;
 }
 .nav-bar nav a:hover {
   text-decoration: underline;
