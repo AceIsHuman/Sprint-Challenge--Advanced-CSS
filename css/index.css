@@ -277,18 +277,20 @@ footer {
     width: 90%;
     margin: 10px auto;
   }
-  .home .space-images img .sky {
-    display: none;
-  }
-  .home .space-images img .launch {
-    display: none;
-  }
 }
 .home .space-images .sky {
   animation-delay: 0.1s;
 }
 .home .space-images .launch {
   animation-delay: 0.2s;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
