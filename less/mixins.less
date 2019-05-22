@@ -1,1 +1,25 @@
 // Mixins Here
+.button(@bg-color, @font) {
+    background: @bg-color;
+    color: @font;
+    border-radius: 0.5rem;
+    width: 30%;
+    font-size: 2rem;
+    padding: 2.5%;
+    text-align: center;
+
+    &:hover {
+        background: @font;
+        color: @bg-color;
+        cursor: pointer;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.img-mobile {
+    width: 90%;
+    margin: 10px auto;
+}
